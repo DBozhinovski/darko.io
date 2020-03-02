@@ -1,9 +1,14 @@
-# Don't commit system files or dependencies
-*.DS_Store
-node_modules/
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+.cache
+node_modules
+yarn-error.log
 
-# Ensure Hugo builds aren't committed to Git
-public/
-site/public/
-dist/
-.tmp/
+# Build directory
+/public
+
+# macOS
+.DS_Store
+
+# deployment-specific configs
+now.json
